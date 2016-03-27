@@ -1,4 +1,8 @@
+const test = require('tape')
 
-var assert = require('assert');
+const {{camelcase basename}} = require('{{basename}}')
 
-describe('{{basename}}', function(){});
+describe('{{basename}}', function(t) {
+  t.ok({{camelcase basename}}, 'module is require-able')
+  t.end()
+})
