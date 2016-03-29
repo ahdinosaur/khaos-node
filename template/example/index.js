@@ -1,3 +1,3 @@
-var {{camelcase basename}} = require('{{basename}}')
+const {{camelcase basename}} = require('../')
 
 console.log('{{basename}}', {{camelcase basename}})
