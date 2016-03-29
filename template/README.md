@@ -6,10 +6,6 @@
 npm install --save {{basename}}
 ```
 
-## example
-
-see [./example](https://ahdinosaur.github.io/{{basename}})
-
 ## usage
 
 ### `{{camelcase basename}} = require('{{basename}}')`

@@ -1,19 +1,19 @@
 
-# khaos-browser
+# khaos-node
 
-A Khaos template to start new browser modules quickly.
+A Khaos template to start new node modules quickly.
 
 ## Installation
 
 Save the template locally with:
 
-    $ khaos install ahdinosaur/khaos-browser browser
+    $ khaos install ahdinosaur/khaos-node node
 
 ## Usage
 
 Create a new node.js project with:
 
-    $ khaos browser my-project
+    $ khaos node my-project
 
 ## License
 
