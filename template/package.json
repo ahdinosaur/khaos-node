@@ -4,8 +4,17 @@
   "description": "{{description}}",
   "main": "index.js",
   "scripts": {
-    "test": "tape test.js",
-    "start": "node-dev example"
+    "start": "node-dev example",
+    "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
+    "test:lint": "standard",
+    "test:node": "NODE_ENV=test tape test",
+    "test:coverage": "NODE_ENV=test nyc npm run test:node",
+    "test": "npm-run-all -s test:node test:lint test:deps"
+  },
+  "browserify": {
+    "transform": [
+      "es2040"
+    ]
   },
   "repository": {
     "type": "git",
@@ -19,9 +28,13 @@
   },
   "homepage": "https://github.com/ahdinosaur/{{basename}}#readme",
   "devDependencies": {
-    "node-dev": "^3.1.0",
-    "npm-run-all": "^1.6.0",
-    "tape": "^4.5.1"
+    "dependency-check": "^2.7.0",
+    "node-dev": "^3.1.3",
+    "npm-run-all": "^4.0.1",
+    "standard": "^8.6.0",
+    "tape": "^4.6.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "es2040": "^1.2.3"
+  }
 }
