@@ -1,5 +1,5 @@
 {
-  "name": "basename",
+  "name": "{{basename}}",
   "version": "0.0.0",
   "description": "{{description}}",
   "main": "index.js",
@@ -41,7 +41,7 @@
     "url": "git+https://github.com/ahdinosaur/{{basename}}.git"
   },
   "keywords": [],
-  "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
+  "author": "Mikey <michael.williams@enspiral.com> (https://dinosaur.is)",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/ahdinosaur/{{basename}}/issues"
